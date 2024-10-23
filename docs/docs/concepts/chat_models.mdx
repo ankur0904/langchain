@@ -30,7 +30,7 @@ LangChain has many chat model integrations that allow you to use a wide variety 
 
 These integrations are one of two types:
 
-1. **Official models**: These are models that are officially supported by LangChain and/or model provider. You can find these models in the `langchain-<provider>` packages.
+1. **Official models**: These are models that are officially supported by LangChain and/or model providers. You can find these models in the `langchain-<provider>` packages.
 2. **Community models**: There are models that are mostly contributed and supported by the community. You can find these models in the `langchain-community` package.
 
 LangChain chat models are named with a convention that prefixes "Chat" to their class names (e.g., `ChatOllama`, `ChatAnthropic`, `ChatOpenAI`, etc.).
@@ -99,7 +99,7 @@ Some important things to note:
 - Standard parameters only apply to model providers that expose parameters with the intended functionality. For example, some providers do not expose a configuration for maximum output tokens, so max_tokens can't be supported on these.
 - Standard params are currently only enforced on integrations that have their own integration packages (e.g. `langchain-openai`, `langchain-anthropic`, etc.), they're not enforced on models in ``langchain-community``.
 
-ChatModels also accept other parameters that are specific to that integration. To find all the parameters supported by a ChatModel head to the [API reference](https://python.langchain.com/api_reference/) for that model.
+Chat models also accept other parameters that are specific to that integration. To find all the parameters supported by a ChatModel head to the [API reference](https://python.langchain.com/api_reference/) for that model.
 
 ## Tool calling
 
